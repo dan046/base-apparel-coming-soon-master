@@ -42,7 +42,7 @@ body{
 .text-content{
     color: var(--primary-color-desaturated-red);
     text-align: center;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .form{
@@ -120,12 +120,10 @@ body{
 @media screen and (min-width: 768px) {
     .grid-container{
         grid-template-columns: 7fr 3fr;
+        grid-template-rows: auto 300px;
+        padding-left: 100px;
         height: 100dvh;
         display: grid;
-    }
-
-    .grid-item{
-        border: 1px solid black;
     }
 
     /* Logo */
@@ -147,7 +145,7 @@ body{
 
     .header-content{
         text-align: start;
-        /* font-size: 4em; */
+        font-size: 4em;
     }
     /* End of Grid-Header */
 
@@ -162,7 +160,6 @@ body{
 
     .text-content{
         text-align: start;
-        /* max-width: 450px; */
     }
     /* End of Grid-Text */
 
