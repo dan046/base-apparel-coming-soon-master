@@ -13,59 +13,53 @@
 </head>
 <body>
     <div class="grid-container" id="grid-container">
-        <div class="grid-item">
-            <div class="inner-grid-container">
+        <div class="grid-item logo">
+            <!-- Logo Container -->
+            <img src="./images/logo.svg" class="logo">
+        </div>
 
-                <div class="logo-container">
-                    <div class="inner-grid-item-logo">
-                        <!-- Logo Container -->
-                        <img src="./images/logo.svg" class="logo">
+        <div class="grid-item hero-mobile-container">
+            <!-- Hero Container -->
+            <!-- Mobile -->
+            <img src="./images/hero-mobile.jpg" class="hero-mobile">
+        </div>
+
+        <div class="grid-item header">
+            <!-- Heading Section -->
+            <h1 class="header-content" id="header-content">
+                <span class="first-word">we're</span>
+                <span class="second-word">coming</span>
+                <span class="third-word">soon</span>
+            </h1>
+        </div>
+
+        <div class="grid-item text">
+            <p class="text-content">
+                Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+            </p>
+        </div>
+
+        <div class="grid-item form">
+            <form class="form" id="form" autocomplete="off">
+                
+                <div class="input-container" id="input-container">
+                    <input type="text" class="input-field" placeholder="Email Address" id="email">
+            
+                    <div class="buttons-icons-container">
+                        <img class="icon-error" id="icon-error" src="./images/icon-error.svg">
+                        <button class="submit">
+                        <img class="icon-arrow" src="./images/icon-arrow.svg" alt="Submit">
+                        </button>
                     </div>
                 </div>
 
-                <div class="inner-grid-item">
-                    <!-- Hero Container -->
-                    <!-- Mobile -->
-                    <img src="./images/hero-mobile.jpg" class="hero-mobile">
+                <div class="error-container" id="error-container">
+                    <ul class="errors-list" id="errors-list"></ul>
                 </div>
-
-                <div class="inner-grid-item">
-                    <!-- Heading Section -->
-                    <h1 class="header-content">
-                        <span class="first-word">we're</span>
-                        <span class="second-word">coming</span>
-                        <span class="third-word">soon</span>
-                    </h1>
-                </div>
-
-                <div class="inner-grid-item">
-                    <p class="text-content">
-                        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
-                      </p>
-                </div>
-
-                <div class="inner-grid-item">
-                    <form class="form" id="form" autocomplete="off">
-                        
-                        <div class="input-container" id="input-container">
-                            <input type="text" class="input-field" placeholder="Email Address" id="email">
-                  
-                            <div class="buttons-icons-container">
-                              <img class="icon-error" id="icon-error" src="./images/icon-error.svg">
-                              <button class="submit">
-                                <img class="icon-arrow" src="./images/icon-arrow.svg" alt="Submit">
-                              </button>
-                            </div>
-                        </div>
-
-                        <div class="error-container" id="error-container">
-                            <ul class="errors-list" id="errors-list"></ul>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            </form>
         </div>
-        <div class="grid-item">
+        
+        <div class="grid-item hero-desktop-container">
             <!-- Hero Container -->
             <!-- Desktop -->
             <img src="./images/hero-desktop.jpg" class="hero-desktop">

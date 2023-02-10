@@ -4,6 +4,7 @@ const errorContainer = document.getElementById("error-container")
 const errorsList = document.getElementById("errors-list")
 const errorIcon = document.getElementById("icon-error")
 const inputBorder = document.getElementById("input-container")
+const header = document.getElementById("header-content")
 
 function showError(errorMessages) {
   errorMessages.forEach((errorMSG) => {
@@ -28,7 +29,7 @@ function checkEmail(input) {
     console.log("success")
   } else {
     errorMessages.push("Please provide a valid email")
-    inputBorder.style.border = "1px solid var(--error-color)"
+    inputBorder.style.border = "2px solid var(--error-color)"
   }
 
   if (errorMessages.length > 0) {
@@ -41,4 +42,13 @@ form.addEventListener("submit", (e) => {
   e.preventDefault()
   clearErrors()
   checkEmail(email)
+})
+
+window.addEventListener("resize", function () {
+  // document.body.style.fontSize = window.innerWidth / 100 + "px"
+  let fontSize = window.innerWidth / 20 + "px"
+  if (parseFloat(fontSize) < 40) {
+    fontSize = "45px"
+  }
+  header.style.fontSize = fontSize
 })
