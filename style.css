@@ -23,8 +23,13 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow: visible;
     font-size: 16px;
     display: flex;
+}
+
+.logo{
+    margin: 10px 5px;
 }
 
 .header-content{
@@ -118,10 +123,18 @@ body{
 }
 
 @media screen and (min-width: 768px) {
+    body{
+        overflow: hidden;
+    }
+
     .grid-container{
+        background-image: url('./images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: 65% 100%;
         grid-template-columns: 7fr 3fr;
-        grid-template-rows: auto 300px;
-        padding-left: 100px;
+        grid-template-rows: auto 220px;
+        padding-left: 5%;
+        column-gap: 2%;
         height: 100dvh;
         display: grid;
     }
@@ -129,6 +142,7 @@ body{
     /* Logo */
     .logo{
         align-items: center;
+        margin: 10px 0;
         grid-column: 1;
         display: flex;
         grid-row: 1;
@@ -159,18 +173,24 @@ body{
     }
 
     .text-content{
+        display: flex;
+        align-items: center;
         text-align: start;
+        height: 100%;
+        width: 100%;
+        max-width: 450px;
     }
     /* End of Grid-Text */
 
     .form{
+        margin: 0;
         grid-column: 1;
         grid-row: 4;
     }
 
     .input-container{
         width: 100%;
-        /* max-width: 450px; */
+        max-width: 450px;
     }
 
     .hero-mobile-container{
@@ -189,5 +209,4 @@ body{
         height: 100%;
     }
     /* End of Grid-Desktop */
-
 }
