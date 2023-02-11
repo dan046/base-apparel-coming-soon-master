@@ -28,6 +28,11 @@ body{
     display: flex;
 }
 
+.grid-container{
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
 .logo{
     margin: 10px 5px;
 }
@@ -131,12 +136,13 @@ body{
         background-image: url('./images/bg-pattern-desktop.svg');
         background-repeat: no-repeat;
         background-size: 65% 100%;
-        grid-template-columns: 7fr 3fr;
+        grid-template-columns: 6fr 4fr;
         grid-template-rows: auto 220px;
         padding-left: 5%;
         column-gap: 2%;
         height: 100dvh;
         display: grid;
+        width: 100%;
     }
 
     /* Logo */
@@ -202,7 +208,10 @@ body{
         display: block;
         grid-column: 2;
         grid-row: 1/5;
-        height: 100vh;
+        /* height: 100vh; */
+        background-image: url('./images/hero-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .hero-desktop{
